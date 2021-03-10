@@ -1,0 +1,6 @@
+POST / HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+
+
+'{"date":"12-02-2021","heure":"12:10","salle_attente_nom":"genico","salle_attente_numero":12,"list_consigne":{'con':'ne fait plus ca'}}'

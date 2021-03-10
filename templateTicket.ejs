@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div style="height:550px; width:375px;">
+        <div style="text-align: center;">
+            <h1>---- Votre rendez-vous ----</h1> <u>
+                <h3>Date</h3>
+            </u>
+            <%=recu.date %> <u>
+                <h3>Heure</h3>
+            </u>
+                <%=recu.heure %> <u>
+                <h3>Salle d'attente</h3>
+            </u>
+                    <%=recu.salle_attente_numero%>/
+                        <%=recu.salle_attente_nom%> <br>
+                            <h1>-- Information pratique --</h1> <u>
+                <h3>N° de passage</h3>
+            </u>
+                            <%=recu.numero_passage%> <u>
+                <h3>Attente estimée </h3>
+            </u>
+                                <%=recu.heure_passage%> <br>
+                                    <h1>---------- Consigne ----------</h1>
+                                    <% recu.list_consigne.forEach(function(item) { %>
+
+
+                                        <%= item.con %><br><br>
+
+                                            <% }); %>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
